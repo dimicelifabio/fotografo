@@ -6,6 +6,7 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    background-color: rgb(51, 51, 51) ;
 }
 
 .navbar{
@@ -61,8 +62,88 @@ body{
     display: flex;
 }
 
+.button{
+    display: none;
+}
+/* modifiche container video */
+
 .container{
     width: 100%;
-    height: 80vh;
-    border: 1px solid red;
+    height: 90vh;
+    position: relative;
+    z-index: -999;
+    background-color: rgb(51, 51, 51);
+    overflow: scroll;
+}
+
+/* modifiche welcome*/
+.welcome{
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    display: flex;
+}
+/* modifiche description*/
+
+.description{
+    width: 50%;
+    height: 50vh;
+    background-color: #fff;
+    
+}
+
+.text{
+    text-align: center;
+}
+
+#id-text-description{
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
+    color: rgb(218, 200, 174) ;
+    
+}
+
+.subtitle{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    height: auto;
+    margin-top: 0;
+}
+
+.create-nature{
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    background-color: rgb(218, 200, 174);
+}
+
+@media (max-width: 768px) {
+    .navbar .link-menu {
+      display: none; /* Nasconde gli elementi della navbar */
+    }
+    
+    .navbar .button{
+        display: inline;
+    }
+    .navbar {
+      position: relative; /* Posiziona il pulsante in modo relativo */
+    }
+  
+    .navbar button {
+      display: block; /* Mostra il pulsante */
+      position: absolute; /* Posiziona il pulsante in modo assoluto */
+      top: 50%; /* Posiziona il pulsante verticalmente al centro */
+      right: 20px; /* Posiziona il pulsante a destra */
+      transform: translateY(-50%); /* Centra il pulsante verticalmente */
+      background-color: #333; /* Colore di sfondo del pulsante */
+      border-radius: 10px;
+      color: white; /* Colore del testo del pulsante */
+      padding: 10px 15px; /* Padding del pulsante */
+      border: none; /* Rimuove il bordo del pulsante */
+      cursor: pointer; /* Indica che è un pulsante */
+    }
+    .navbar button:hover {
+        background-color: #555; /* Colore di sfondo del pulsante al mouseover */
+      }
 }
