@@ -134,7 +134,7 @@ body{
     color: black;
 }
 
-.fa-facebook{
+.fa-linkedin{
     border: 1px solid black;
     padding: 10px;
     border-radius: 50%;
@@ -142,7 +142,7 @@ body{
 
 }
 
-.end-form .social .facebook-logo a{
+.end-form .social .linkedin-logo a{
     text-decoration: none;
     color: black;
 }
@@ -161,18 +161,37 @@ body{
     color: black;
 }
 
+.fa-twitch{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+
+
+}
+
+.end-form .social .twitch-logo a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .fa-instagram:hover{
     background-color: rgb(218, 200, 174);
 
 }
 
-.fa-facebook:hover{
+.fa-linkedin:hover{
     background-color: rgb(218, 200, 174);
     
 }
 
 .fa-youtube:hover{
+    background-color: rgb(218, 200, 174);
+    
+}
+
+.fa-twitch:hover{
     background-color: rgb(218, 200, 174);
     
 }
@@ -183,8 +202,37 @@ body{
     margin-top: 25px;
 }
 
+.text-end-form{
+    width: 100%;
+    height: auto;
+}
 
+.follow{
+    text-align: center;
+    margin: 0;
+}
 
+.phone-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.number-phone-number{
+    margin: 20px;
+}
+
+.mail-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.text-mail-service{
+    margin: 20px;
+}
 
 
 
